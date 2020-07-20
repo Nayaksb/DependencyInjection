@@ -8,24 +8,56 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Lets get country details
-        
-        let country = CallCountry() // initialized object
-        
-        country.getCountryDetails() // called details method
-    }
-
-
-}
 //Mark: API end point
 
 let endPoint = "https://restcountries.eu/rest/v2/name/India"
     
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var lblType: UILabel!
+    
+    @IBOutlet weak var lblJson: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        // Lets get country details
+        
+        let country = CallCountry(_client: EndpointClient())
+        // initialized object with EndpointClient object
+        country.getCountryDetails() // called details method
+    }
 
+//    func onDataReady(response: Any) {
+//        lblJson.text = response as? String
+//    }
+    
+    @IBAction func clieckedProperty(_ sender: UIButton) {
+        lblType.text = "Property type DI"
+//        let country = CallCountry() // initialized object
+               
+//        country.getCountryDetails() // called details method
+    }
+    
+    @IBAction func clickedInitializer(_ sender: UIButton) {
+        lblType.text = "Initializer type DI"
+
+//        let country = CallCountry() // initialized object
+               
+//        country.getCountryDetails() // called details method
+    }
+    
+    @IBAction func clickedMethos(_ sender: UIButton) {
+        lblType.text = "Method type DI"
+
+//        let country = CallCountry() // initialized object
+               
+//        country.getCountryDetails() // called details method
+    }
+}
+//Mark: Without DI
 //Mark: Endpoint Client Defination Class
 
 class EndpointClient{
@@ -38,15 +70,25 @@ class EndpointClient{
 }
 
 class CallCountry{
-    func getCountryDetails(){
-        let clinet: EndpointClient = EndpointClient()
-        
-        clinet.getCountryData(url: URL(string: endPoint)!){(responseData) in
+    
+    var client : EndpointClient? = nil
+    
+    /*
+     Added Constructor with dependency value as argument
+     */
+    init(_client : EndpointClient){
+        client = _client
+    }
+    func getCountryDetails() {
+       
+        client?.getCountryData(url: URL(string: endPoint)!){(responseData) in
             if responseData?.count != 0 {
                 //process the response data
                 print("Country Data \(String(describing: responseData?.count))")
+                
             }
             
         }
+        
     }
 }

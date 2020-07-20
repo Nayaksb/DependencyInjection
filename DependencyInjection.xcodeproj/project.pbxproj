@@ -15,6 +15,9 @@
 		1EE7C23C24C58C080090A706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE7C23A24C58C080090A706 /* LaunchScreen.storyboard */; };
 		1EE7C24724C58C090090A706 /* DependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C24624C58C090090A706 /* DependencyInjectionTests.swift */; };
 		1EE7C25224C58C090090A706 /* DependencyInjectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C25124C58C090090A706 /* DependencyInjectionUITests.swift */; };
+		1EE7C26224C5C1A90090A706 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C26124C5C1A90090A706 /* PropertyViewController.swift */; };
+		1EE7C26424C5C1DE0090A706 /* InitializerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C26324C5C1DE0090A706 /* InitializerViewController.swift */; };
+		1EE7C26624C5C1F10090A706 /* MethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C26524C5C1F10090A706 /* MethodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1EE7C24D24C58C090090A706 /* DependencyInjectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyInjectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE7C25124C58C090090A706 /* DependencyInjectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionUITests.swift; sourceTree = "<group>"; };
 		1EE7C25324C58C090090A706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EE7C26124C5C1A90090A706 /* PropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
+		1EE7C26324C5C1DE0090A706 /* InitializerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerViewController.swift; sourceTree = "<group>"; };
+		1EE7C26524C5C1F10090A706 /* MethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				1EE7C23824C58C080090A706 /* Assets.xcassets */,
 				1EE7C23A24C58C080090A706 /* LaunchScreen.storyboard */,
 				1EE7C23D24C58C080090A706 /* Info.plist */,
+				1EE7C26124C5C1A90090A706 /* PropertyViewController.swift */,
+				1EE7C26324C5C1DE0090A706 /* InitializerViewController.swift */,
+				1EE7C26524C5C1F10090A706 /* MethodViewController.swift */,
 			);
 			path = DependencyInjection;
 			sourceTree = "<group>";
@@ -262,6 +271,9 @@
 				1EE7C23424C58BF80090A706 /* ViewController.swift in Sources */,
 				1EE7C23024C58BF80090A706 /* AppDelegate.swift in Sources */,
 				1EE7C23224C58BF80090A706 /* SceneDelegate.swift in Sources */,
+				1EE7C26624C5C1F10090A706 /* MethodViewController.swift in Sources */,
+				1EE7C26224C5C1A90090A706 /* PropertyViewController.swift in Sources */,
+				1EE7C26424C5C1DE0090A706 /* InitializerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
