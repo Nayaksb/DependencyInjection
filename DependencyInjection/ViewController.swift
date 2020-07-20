@@ -12,10 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Lets get country details
         
-        let country = CallCountry()
-        country.getCountryDetails()
+        let country = CallCountry() // initialized object
+        
+        country.getCountryDetails() // called details method
     }
 
 
